@@ -15,7 +15,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>vinay</finalName>
-  </build>
-</project>
+<distributionManagement>
+  <snapshotRepository>
+    <id>maven_shapshot</id>
+    <url>http://35.229.43.136:8081/nexus/content/repositories/maven_shapshot</url>
+  </snapshotRepository>
+<repository>
+    <id>maven_release</id>
+    <url>http://35.229.43.136:8081/nexus/content/repositories/maven_release</url>
+  </repository>
+</distributionManagement>
